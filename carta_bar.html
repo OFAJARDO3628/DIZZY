@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Dizzy</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="css/styles.css" />
+        <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    </head>
+    <body>
+
+        <div id="contenido"> 
+            <div id="container">
+                <header class="text-center">
+                    <a><img src="images/logo.jpg" class="logo" alt="logo"></a>
+                </header>
+                <nav id="menu">
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="menu_dia.html">Menú del día</a></li>
+                        <li><a href="prox_eventos.html">Próximos eventos</a></li>
+                        <li><a href="carta_bar.html">Carta del bar</a></li>
+                    </ul>
+                </nav>
+
+
+                <div class="page_content">
+                    <h2 class="text-center">Carta del bar</h2>
+
+
+                    <div id="carta_bar" style="min-height: 400px">
+                        <ul class="pestanas_section">
+                            <li id="sect1">Helados, malteadas y bebidas</li>
+                            <li id="sect2">Bocaditos y picadas</li>
+                        </ul>
+                        <section id="section1">        
+                            <h2>Helados, malteadas y bebidas</h2>
+                            <article class="text-center">
+                                <h3>Coctel 1</h3>
+                                <img src="http://lorempixel.com/300/150/food/" style="margin: auto" alt="img1">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque malesuada velit nisl, id consequat ex pulvinar et. Aenean vitae massa erat. 
+                                    Quisque sodales varius varius. Fusce non ex suscipit, scelerisque libero et, congue felis. Etiam luctus mauris id neque
+                                    venenatis maximus. Donec nec fermentum felis, in posuere nisi. Lorem ipsum dolor sit amet, consectetur</p>
+                                <span class="precio_bar">$25.000</span>
+                            </article>
+                            <article class="text-center">
+                                <h3>Coctel 2</h3>
+                                <img src="http://lorempixel.com/300/150/food/" style="margin: auto" alt="img1">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque malesuada velit nisl, id consequat ex pulvinar et. Aenean vitae massa erat. 
+                                    Quisque sodales varius varius. Fusce non ex suscipit, scelerisque libero et, congue felis. Etiam luctus mauris id neque
+                                    venenatis maximus. Donec nec fermentum felis, in posuere nisi. Lorem ipsum dolor sit amet, consectetur</p>
+                                <span class="precio_bar">$25.000</span>
+                            </article>
+                            <article class="text-center">
+                                <h3>Coctel 3</h3>
+                                <img src="http://lorempixel.com/300/150/food/" style="margin: auto" alt="img1">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque malesuada velit nisl, id consequat ex pulvinar et. Aenean vitae massa erat. 
+                                    Quisque sodales varius varius. Fusce non ex suscipit, scelerisque libero et, congue felis. Etiam luctus mauris id neque
+                                    venenatis maximus. Donec nec fermentum felis, in posuere nisi. Lorem ipsum dolor sit amet, consectetur</p>
+                                <span class="precio_bar">$25.000</span>
+                            </article>
+                        </section>
+                        <section id="section2">   
+                            <h2>Bocaditos y picadas</h2>
+                            <article class="text-center">
+                                <h3>Coctel 4</h3>
+                                <img src="http://lorempixel.com/300/150/food/" style="margin: auto" alt="img1">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque malesuada velit nisl, id consequat ex pulvinar et. Aenean vitae massa erat. 
+                                    Quisque sodales varius varius. Fusce non ex suscipit, scelerisque libero et, congue felis. Etiam luctus mauris id neque
+                                    venenatis maximus. Donec nec fermentum felis, in posuere nisi. Lorem ipsum dolor sit amet, consectetur</p>
+                                <span class="precio_bar">$25.000</span>
+                            </article>
+                            <article class="text-center">
+                                <h3>Coctel 5</h3>
+                                <img src="http://lorempixel.com/300/150/food/" style="margin: auto" alt="img1">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque malesuada velit nisl, id consequat ex pulvinar et. Aenean vitae massa erat. 
+                                    Quisque sodales varius varius. Fusce non ex suscipit, scelerisque libero et, congue felis. Etiam luctus mauris id neque
+                                    venenatis maximus. Donec nec fermentum felis, in posuere nisi. Lorem ipsum dolor sit amet, consectetur</p>
+                                <span class="precio_bar">$25.000</span>
+                            </article>
+                            <article class="text-center">
+                                <h3>Coctel 6</h3>
+                                <img src="http://lorempixel.com/300/150/food/" style="margin: auto" alt="img1">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque malesuada velit nisl, id consequat ex pulvinar et. Aenean vitae massa erat. 
+                                    Quisque sodales varius varius. Fusce non ex suscipit, scelerisque libero et, congue felis. Etiam luctus mauris id neque
+                                    venenatis maximus. Donec nec fermentum felis, in posuere nisi. Lorem ipsum dolor sit amet, consectetur</p>
+                                <span class="precio_bar">$25.000</span>
+                            </article>
+                        </section>
+                    </div>
+                </div>
+                <script type="text/javascript">
+                    var menu_sect1 = document.getElementById("sect1");
+                    var menu_sect2 = document.getElementById("sect2");
+                    var section1 = document.getElementById("section1");
+                    var section2 = document.getElementById("section2");
+                    menu_sect1.onclick = function () {
+                        section1.style.display = "block";
+                        section2.style.display = "none";
+                    };
+                    menu_sect2.onclick = function () {
+                        section2.style.display = "block";
+                        section1.style.display = "none";
+                    };
+                </script>
+                <footer>
+                    <h2 class="text-center">FOOTER</h2>
+                    <p class="text-center" style="font-size: 10px">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque malesuada velit nisl, id consequat ex pulvinar et.
+                        Aenean vitae massa erat. 
+                        Quisque sodales varius varius. Fusce non ex suscipit, scelerisque libero et, congue felis. 
+                    </p>
+                </footer>
+            </div> <!-- cierre <div id="container">-->
+        </div> <!-- cierre <div id="contenido">-->
+    </body>
+</html>

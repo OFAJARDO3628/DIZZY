@@ -1,0 +1,203 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    /*font-size: 100%;
+    font: inherit;*/
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+ol, ul {
+    list-style: none;
+}
+
+/* */
+body{
+    background: #000;
+    font-family: 'Helvetica', 'Arial', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, p,a, li, label{
+    color: #FFF;
+}
+
+/**/
+.img-responsive{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+.center-block {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+.text-center{
+    text-align: center;
+}
+.clear{
+    clear: both;
+}
+.voffset  { margin-top: 2px; }
+.voffset1 { margin-top: 5px; }
+.voffset2 { margin-top: 10px; }
+.voffset3 { margin-top: 15px; }
+.voffset4 { margin-top: 30px; }
+.voffset5 { margin-top: 40px; }
+.voffset6 { margin-top: 60px; }
+.voffset7 { margin-top: 80px; }
+.voffset8 { margin-top: 100px; }
+.voffset9 { margin-top: 150px; }
+/**/
+
+/**/
+div, header, footer{
+    /*outline: 1px solid #FFF;*/
+}
+header{
+    min-height: 80px;
+}
+.logo{
+    max-width: 250px;
+}
+nav{
+    min-height: 50px;
+    width: 80%;
+    margin: auto;
+}
+nav ul li{
+    display: inline-block;
+    min-width: 50px;
+    width: 24%;
+    text-align: center;
+}
+footer{
+    min-height: 100px;
+    /*position: absolute;
+    width: 100%;
+    bottom: 0;*/
+    margin-top: 30px;
+}
+#contenido{
+    width:100%;
+}
+#container{
+    max-width:945px;
+    margin: auto;
+    min-height: 700px;
+    position: relative;
+    padding: 5px;
+}
+
+.page_content{
+    /*background: #fff;
+    color:#000;*/
+}
+.page_index{
+    background: #000;
+    color:#FFF;
+}
+.page_content .div_bottom{
+    margin-top: 30px;
+}
+.page_content .div_bottom div{
+    float:left;
+    width: 33%;
+    color: #FFF;
+}
+.page_content .div_bottom:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/*Index*/
+.contact_form label{
+    display: block;
+}
+.contact_form input, .contact_form textarea{
+    display: block;
+}
+/**/
+
+/*Eventos*/
+#agenda_mes article{
+    margin-top: 20px;
+}
+#agenda_mes article ul{
+    list-style: circle;
+}
+/**/
+
+/*Menú dia*/
+.menu_imgs{
+    margin: auto;
+    max-width: 600px;
+}
+.menu_imgs div{
+    float:left;
+}
+.menu_imgs:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+/*Carta bar*/
+.pestanas_section li{
+    display: inline-block;
+    cursor: pointer;
+    background: #FFF;
+    color:#000;
+    line-height: 1.5em;
+    padding:4px;
+}
+#carta_bar section{
+    margin-top: 20px;
+}
+section[id^="section"]{
+    display: none;
+}
+section#section1{
+    display:block;
+}
+#carta_bar article{
+    margin-top: 20px;
+}
+
+/*****Media*/
+@media (max-width:767px){
+    /*Header*/
+    nav{
+        width: 100%;
+    }
+    /*Index*/
+    .page_content .div_bottom div{
+        float:none;
+        width: 100%;
+        margin-top: 30px;
+    }
+    /*Menu*/
+    .menu_imgs div{
+        float:none;
+    }
+    .menu_imgs div img{
+        margin: auto;
+        display: block;
+    }
+}
