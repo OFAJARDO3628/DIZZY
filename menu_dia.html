@@ -6,70 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="css/styles.css" />
         <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-        <script type="text/javascript">
-            function iniciar() {
-                var tipo_menu = 0;
-                var titulos = new Array();
-                var menu = new Array();
-                var date = new Date();
-                var hora = date.getHours();
-                if (date.getDay() == 0) {
-                    tipo_menu = 4;
-                }else if (1 <= hora && hora < 7) {
-                    tipo_menu = 0;
-                } else if (7 <= hora && hora < 11) {
-                    tipo_menu = 1;
-                } else if (11 <= hora && hora < 15) {
-                    tipo_menu = 2;
-                } else if (15 <= hora || hora <= 1) {
-                    tipo_menu = 3;
-                }
-                
-                switch (tipo_menu) {
-                    case 0:
-                        alert("En este momento nuestro establecimiento se encuentra cerrado. Lo esperamos a partir de las 7am");
-                        break;
-                    case 1:
-                        titulos[0] = ["Desayuno", "Bebida", "Acompañamientos", "Jugos"];
-                        menu[0] = ["Café", "Chocolate"];
-                        menu[1] = ["Pan", "Arepa"];
-                        menu[2] = ["Naranja", "Mandarina"];
-                        mostrar_menu(titulos, menu);
-                        break;
-                    case 2:
-                        titulos[0] = ["Almuerzo", "Sopa", "Entrada", "Proteína", "Guarnición", "Acompañamientos"];
-                        menu[0] = ["Sopa del día"];
-                        menu[1] = ["Fruta"];
-                        menu[2] = ["Carne de res"];
-                        menu[3] = ["Lentejas", "Fríjoles"];
-                        menu[4] = ["Ensalada de repollo y zanahoria"];
-                        mostrar_menu(titulos, menu);
-                        break;
-                    case 3:
-                        alert("En estos momentos lo redirigiremos a la carta del bar.\nGracias");
-                        location.href = "carta_bar.html";
-                        break;
-                    case 4:
-                        alert("Lo esperamos mañana lunes a partir de las 7am");
-                        break;
-                            
-                }
-            }
-
-            function mostrar_menu(titulos, menu) {
-                var section1 = document.getElementById("menu_lista");
-                var html = "<h2>" + titulos[0][0] + "</h2><br><br>";
-                for (i = 0; i < menu.length; i++) {
-                    html += "<h2>" + titulos[0][i + 1] + "</h2>";
-                    for (j = 0; j < menu[i].length; j++) {
-                        html += "<p>" + menu[i][j] + "</p>";
-                    }
-                    html += "<br>";
-                }
-                section1.innerHTML = html;
-            }
-            window.addEventListener("load", iniciar, false);
-        </script>
+        <script src="js/menu_dia.js"></script> 
     </head>
     <body>
 
@@ -103,7 +40,7 @@
                     </div>
                 </div>
                 <footer>
-                    <h2 class="text-center">FOOTER</h2>
+                    <h2 class="text-center"></h2>
                     <p class="text-center" style="font-size: 10px">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque malesuada velit nisl, id consequat ex pulvinar et.
                         Aenean vitae massa erat. 
