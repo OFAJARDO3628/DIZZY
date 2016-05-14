@@ -42,16 +42,16 @@ function crear_eventos() {
     switch (mes) {
         //Mayo
         case 4:
-            eventos[i++] = [5, ["Evento 1", "Evento 2", "Evento 3", "Evento 4"]];
-            eventos[i++] = [13, ["Evento 5", "Evento 6", "Evento 7", "Evento 8"]];
-            eventos[i++] = [16, ["Evento 9", "Evento 10"]];
-            eventos[i++] = [25, ["Evento 11"]];
+            eventos[i++] = [8, ["Celebración día de la Madre", "Almuerzo Familiar"]];
+            eventos[i++] = [14, ["Aniversario", "Cumpleaños", "Almuerzo Familiar", "Cena Familiar"]];
+            eventos[i++] = [15, ["Almuerzo de Trabajo", "Cena de Aniversario"]];
+            eventos[i++] = [22, ["Cumpleaños"]];
             break;
             //Junio
         case 5:
-            eventos[i++] = [6, ["Evento 1", "Evento 2", "Evento 3"]];
-            eventos[i++] = [20, ["Evento 4", "Evento 5"]];
-            eventos[i++] = [28, ["Evento 6", "Evento 7"]];
+            eventos[i++] = [5, ["Almuerzo Familiar", "Almuerzo de Trabajo", "Cumpleaños"]];
+            eventos[i++] = [12, ["Cumpleaños", "Aniversario"]];
+            eventos[i++] = [19, ["Celebración día del padre"]];
             break;
     }
 
