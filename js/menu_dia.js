@@ -4,7 +4,7 @@ function iniciar() {
     var menu = new Array();
     var date = new Date();
     var hora = date.getHours();
-    if (date.getDay() == 0) {
+    if (date.getDay() === 0) {
         tipo_menu = 4;
     } else if (1 <= hora && hora < 7) {
         tipo_menu = 0;
@@ -44,7 +44,9 @@ var t = 0;
         case 4:
             alert("Lo esperamos mañana lunes a partir de las 7am");
             break;
-
+        default:
+            alert("Lo esperamos mañana lunes a partir de las 7am");
+            break;    
     }
 }
 
